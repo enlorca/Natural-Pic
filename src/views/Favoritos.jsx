@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { useLikedPhotos } from "../components/context/LikedPhotosContext";
-import IconHeart from "../components/IconHeart";
-import "./Home.css";
 import Gallery from "../components/Gallery";
 
 const Favoritos = () => {
@@ -30,6 +28,7 @@ const Favoritos = () => {
         photos={likedPhotosData}
         likedPhotos={likedPhotos}
         toggleLike={toggleLike}
+        showHearts={false}
       />
     </div>
   );

@@ -3,9 +3,9 @@ import { Route, Routes } from "react-router-dom";
 import { LikedPhotosProvider } from "./components/context/LikedPhotosContext";
 import Navbar from "./components/Navbar.jsx";
 import Home from "./views/Home";
-import Favorites from "./views/Favorites";
+import Favoritos from "./views/Favoritos";
 import NotFound from "./views/NotFound";
-import "./App.css";
+
 
 function App() {
 
@@ -15,7 +15,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/Favorites" element={<Favorites />} />
+          <Route path="/Favoritos" element={<Favoritos />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </LikedPhotosProvider>
